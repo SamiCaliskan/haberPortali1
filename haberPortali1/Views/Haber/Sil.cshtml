@@ -1,0 +1,38 @@
+﻿@model Haber
+
+<form method="post">
+    <input asp-for="Id" hidden />
+
+    <div class="border pt-3 mt-5">
+        <div class="row pb-3">
+            <h2 class="text-primary">Haberi Sil</h2>
+            </hr>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="HaberAdi" class="p-0"></label>
+            <input asp-for="HaberAdi" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Tanim" class="p-0"></label>
+            <input asp-for="Tanim" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Yazar" class="p-0"></label>
+            <input asp-for="Yazar" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Deger" class="p-0"></label>
+            <input asp-for="Deger" disabled class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary" style="width:250px">Haberi Sil</button>
+
+        <a asp-controller="Haber" asp-action="Index" class="btn btn-lg btn-primary" style="width:250px">
+            Haberlere Geri Dön
+        </a>
+
+    </div>
+
+</form>
+
